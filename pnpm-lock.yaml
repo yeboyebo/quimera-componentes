@@ -54,6 +54,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.3.4
         version: 4.3.4(vite@6.0.7(@types/node@22.10.6))
+      chromatic:
+        specifier: ^11.24.0
+        version: 11.24.0
       eslint:
         specifier: ^9.17.0
         version: 9.18.0
