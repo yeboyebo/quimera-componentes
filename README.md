@@ -27,8 +27,20 @@ cd quimera-componentes/
 pnpm install
 ```
 
+#### 3. Instalar playwright?
+
+```sh
+pnpm dlx playwright install
+```
+
 ## Ver storybook
 
 ```sh
 pnpm run storybook
+```
+
+## Test automáticos de Storybook
+
+```sh
+pnpm run test-storybook
 ```
