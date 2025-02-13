@@ -1,0 +1,12 @@
+/* override icon gallery background based on theme :root {
+  color-scheme: light dark;
+}
+
+.docblock-icongallery > div > div:first-child {
+  background: light-dark(#fff, #333);
+}
+
+/* override story canvas background based on them */
+/* .sbdocs-preview {
+  background: light-dark(#fff, #333) !important;
+} */
