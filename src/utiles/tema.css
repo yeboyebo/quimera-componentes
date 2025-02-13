@@ -1,0 +1,75 @@
+:root {
+  color-scheme: light dark;
+
+  --color-blanco: #fff;
+  --color-negro: #000d;
+
+  --color-texto-primario: light-dark(#000d, #fff);
+  --color-texto-secundario: light-dark(#0009, #fffb);
+  --color-texto-deshabilitado: light-dark(#0006, #fff8);
+  --color-fondo: light-dark(#fff, #121212);
+
+  --color-primario: #1976d2;
+  --color-error: light-dark(#d32f2f, #f44336);
+  --color-advertencia: light-dark(#ed6c02, #ffa726);
+  --color-exito: light-dark(#2e7d32, #66bb6a);
+  --color-deshabilitado: light-dark(#fff8, #0006);
+
+  --color-primario-claro: color-mix(
+    in srgb,
+    var(--color-primario),
+    var(--color-blanco) 45%
+  );
+  --color-primario-oscuro: color-mix(
+    in srgb,
+    var(--color-primario),
+    var(--color-negro) 45%
+  );
+
+  --color-error-claro: color-mix(
+    in srgb,
+    var(--color-error),
+    var(--color-blanco) 45%
+  );
+  --color-error-oscuro: color-mix(
+    in srgb,
+    var(--color-error),
+    var(--color-negro) 45%
+  );
+
+  --color-advertencia-claro: color-mix(
+    in srgb,
+    var(--color-advertencia),
+    var(--color-blanco) 45%
+  );
+  --color-advertencia-oscuro: color-mix(
+    in srgb,
+    var(--color-advertencia),
+    var(--color-negro) 45%
+  );
+
+  --color-exito-claro: color-mix(
+    in srgb,
+    var(--color-exito),
+    var(--color-blanco) 45%
+  );
+  --color-exito-oscuro: color-mix(
+    in srgb,
+    var(--color-exito),
+    var(--color-negro) 45%
+  );
+
+  --color-deshabilitado-claro: color-mix(
+    in srgb,
+    var(--color-deshabilitado),
+    var(--color-blanco) 45%
+  );
+  --color-deshabilitado-oscuro: color-mix(
+    in srgb,
+    var(--color-deshabilitado),
+    var(--color-negro) 45%
+  );
+
+  font-family: "Inter", "Inter-Fallback", Arial, system-ui, sans-serif,
+    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
