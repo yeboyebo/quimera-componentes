@@ -4,7 +4,7 @@ import React from "react";
 const preview: Preview = {
   decorators: [
     (Story) => (
-      <div style={{ display: "flex", gap: "1rem" }}>
+      <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
         <Story />
       </div>
     ),
