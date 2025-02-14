@@ -1,6 +1,5 @@
 import type { Preview } from "@storybook/react";
 import React from "react";
-import "./storybook.css";
 
 const preview: Preview = {
   decorators: [
@@ -11,8 +10,14 @@ const preview: Preview = {
     ),
     (Story, context) => {
       const selectedTheme = context.globals.theme || "Claro";
+
+      if (!context.userGlobals.backgrounds) {
+        context.userGlobals.backgrounds = { value: "#fff" };
+      }
+
       context.userGlobals.backgrounds.value =
         selectedTheme === "Claro" ? "#fff" : "#333";
+
       return (
         <div
           style={{
@@ -37,7 +42,7 @@ const preview: Preview = {
       description: "Tema global",
       toolbar: {
         title: "Cambiar tema",
-        icon: "contrast",
+        icon: "sun",
         items: ["Claro", "Oscuro"],
       },
     },
