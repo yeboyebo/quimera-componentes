@@ -12,11 +12,11 @@ const preview: Preview = {
       const selectedTheme = context.globals.theme || "Claro";
 
       if (!context.userGlobals.backgrounds) {
-        context.userGlobals.backgrounds = { value: "#fff" };
+        context.userGlobals.backgrounds = { value: "#f8f9fa" };
       }
 
       context.userGlobals.backgrounds.value =
-        selectedTheme === "Claro" ? "#fff" : "#333";
+        selectedTheme === "Claro" ? "#f8f9fa" : "#343a40";
 
       return (
         <div

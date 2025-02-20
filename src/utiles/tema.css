@@ -1,75 +1,38 @@
+@import "./tokens/letra.css";
+@import "./tokens/espaciado.css";
+@import "./tokens/borde.css";
+@import "./tokens/ratio.css";
+@import "./tokens/color.css";
+
 :root {
   color-scheme: light dark;
 
-  --color-blanco: #fff;
-  --color-negro: #000d;
+  --color-fondo: light-dark(var(--gris-1), var(--gris-8));
 
-  --color-texto-primario: light-dark(#000d, #fff);
-  --color-texto-secundario: light-dark(#0009, #fffb);
-  --color-texto-deshabilitado: light-dark(#0006, #fff8);
-  --color-fondo: light-dark(#fff, #121212);
+  --color-texto-primario: light-dark(var(--negro), var(--blanco));
+  --color-texto-secundario: light-dark(var(--gris-8), var(--gris-5));
+  --color-texto-deshabilitado: light-dark(var(--gris-6), var(--gris-6));
 
-  --color-primario: #1976d2;
-  --color-error: light-dark(#d32f2f, #f44336);
-  --color-advertencia: light-dark(#ed6c02, #ffa726);
-  --color-exito: light-dark(#2e7d32, #66bb6a);
-  --color-deshabilitado: light-dark(#fff8, #0006);
+  --color-primario: light-dark(var(--azul-7), var(--azul-6));
+  --color-error: light-dark(var(--rojo-7), var(--rojo-6));
+  --color-advertencia: light-dark(var(--naranja-7), var(--naranja-6));
+  --color-exito: light-dark(var(--verde-7), var(--verde-6));
+  --color-deshabilitado: light-dark(var(--gris-3), var(--gris-7));
 
-  --color-primario-claro: color-mix(
-    in srgb,
-    var(--color-primario),
-    var(--color-blanco) 45%
-  );
-  --color-primario-oscuro: color-mix(
-    in srgb,
-    var(--color-primario),
-    var(--color-negro) 45%
-  );
+  --color-primario-claro: light-dark(var(--azul-3), var(--azul-3));
+  --color-primario-oscuro: light-dark(var(--azul-9), var(--azul-9));
 
-  --color-error-claro: color-mix(
-    in srgb,
-    var(--color-error),
-    var(--color-blanco) 45%
-  );
-  --color-error-oscuro: color-mix(
-    in srgb,
-    var(--color-error),
-    var(--color-negro) 45%
-  );
+  --color-error-claro: light-dark(var(--rojo-3), var(--rojo-3));
+  --color-error-oscuro: light-dark(var(--rojo-9), var(--rojo-9));
 
-  --color-advertencia-claro: color-mix(
-    in srgb,
-    var(--color-advertencia),
-    var(--color-blanco) 45%
-  );
-  --color-advertencia-oscuro: color-mix(
-    in srgb,
-    var(--color-advertencia),
-    var(--color-negro) 45%
-  );
+  --color-advertencia-claro: light-dark(var(--naranja-3), var(--naranja-3));
+  --color-advertencia-oscuro: light-dark(var(--naranja-9), var(--naranja-9));
 
-  --color-exito-claro: color-mix(
-    in srgb,
-    var(--color-exito),
-    var(--color-blanco) 45%
-  );
-  --color-exito-oscuro: color-mix(
-    in srgb,
-    var(--color-exito),
-    var(--color-negro) 45%
-  );
+  --color-exito-claro: light-dark(var(--verde-3), var(--verde-3));
+  --color-exito-oscuro: light-dark(var(--verde-9), var(--verde-9));
 
-  --color-deshabilitado-claro: color-mix(
-    in srgb,
-    var(--color-deshabilitado),
-    var(--color-blanco) 45%
-  );
-  --color-deshabilitado-oscuro: color-mix(
-    in srgb,
-    var(--color-deshabilitado),
-    var(--color-negro) 45%
-  );
+  --color-deshabilitado-claro: light-dark(var(--gris-1), var(--gris-5));
+  --color-deshabilitado-oscuro: light-dark(var(--gris-5), var(--gris-9));
 
-  font-family: "Inter", "Inter-Fallback", Arial, system-ui, sans-serif,
-    "Segoe UI", Roboto, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-system-ui);
 }
