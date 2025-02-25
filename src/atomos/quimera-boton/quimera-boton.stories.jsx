@@ -1,7 +1,8 @@
-import "./wc-boton-auto.js";
+import "../../utiles/tema.css";
+import "./quimera-boton.js";
 
 const meta = {
-  title: "WebComponents/Átomos/wc-boton-auto",
+  title: "Átomos/quimera-boton",
   parameters: {
     layout: "centered",
     docs: {
@@ -36,21 +37,21 @@ const meta = {
 export default meta;
 
 export const Base = {
-  render: (args) => <wc-boton-auto {...args}>Botón Base</wc-boton-auto>,
+  render: (args) => <quimera-boton {...args}>Botón Base</quimera-boton>,
 };
 
 export const Variantes = {
   render: (args) => (
     <>
-      <wc-boton-auto {...args} variante="solido">
+      <quimera-boton {...args} variante="solido">
         Sólido
-      </wc-boton-auto>
-      <wc-boton-auto {...args} variante="borde">
+      </quimera-boton>
+      <quimera-boton {...args} variante="borde">
         Borde
-      </wc-boton-auto>
-      <wc-boton-auto {...args} variante="texto">
+      </quimera-boton>
+      <quimera-boton {...args} variante="texto">
         Texto
-      </wc-boton-auto>
+      </quimera-boton>
     </>
   ),
 };
@@ -58,15 +59,15 @@ export const Variantes = {
 export const Destructivo = {
   render: (args) => (
     <>
-      <wc-boton-auto {...args} destructivo variante="solido">
+      <quimera-boton {...args} destructivo variante="solido">
         Sólido
-      </wc-boton-auto>
-      <wc-boton-auto {...args} destructivo variante="borde">
+      </quimera-boton>
+      <quimera-boton {...args} destructivo variante="borde">
         Borde
-      </wc-boton-auto>
-      <wc-boton-auto {...args} destructivo variante="texto">
+      </quimera-boton>
+      <quimera-boton {...args} destructivo variante="texto">
         Texto
-      </wc-boton-auto>
+      </quimera-boton>
     </>
   ),
 };
@@ -74,15 +75,15 @@ export const Destructivo = {
 export const Deshabilitado = {
   render: (args) => (
     <>
-      <wc-boton-auto {...args} deshabilitado variante="solido">
+      <quimera-boton {...args} deshabilitado variante="solido">
         Sólido
-      </wc-boton-auto>
-      <wc-boton-auto {...args} deshabilitado variante="borde">
+      </quimera-boton>
+      <quimera-boton {...args} deshabilitado variante="borde">
         Borde
-      </wc-boton-auto>
-      <wc-boton-auto {...args} deshabilitado variante="texto">
+      </quimera-boton>
+      <quimera-boton {...args} deshabilitado variante="texto">
         Texto
-      </wc-boton-auto>
+      </quimera-boton>
     </>
   ),
 };
@@ -90,15 +91,15 @@ export const Deshabilitado = {
 export const Tamaños = {
   render: (args) => (
     <>
-      <wc-boton-auto {...args} tamaño="pequeño">
+      <quimera-boton {...args} tamaño="pequeño">
         Pequeño
-      </wc-boton-auto>
-      <wc-boton-auto {...args} tamaño="mediano">
+      </quimera-boton>
+      <quimera-boton {...args} tamaño="mediano">
         Mediano
-      </wc-boton-auto>
-      <wc-boton-auto {...args} tamaño="grande">
+      </quimera-boton>
+      <quimera-boton {...args} tamaño="grande">
         Grande
-      </wc-boton-auto>
+      </quimera-boton>
     </>
   ),
 };

@@ -1,7 +1,8 @@
-import "./wc-input-auto.js";
+import "../../utiles/tema.css";
+import "./quimera-input.js";
 
 const meta = {
-  title: "WebComponents/Átomos/wc-input-auto",
+  title: "Átomos/quimera-input",
   parameters: {
     layout: "centered",
     docs: {
@@ -55,37 +56,37 @@ const meta = {
 export default meta;
 
 export const Base = {
-  render: (args) => <wc-input-auto {...args}></wc-input-auto>,
+  render: (args) => <quimera-input {...args}></quimera-input>,
 };
 
 export const Validaciones = {
   render: (args) => (
     <>
-      <wc-input-auto
+      <quimera-input
         {...args}
         erroneo
         texto-validacion="Este campo es requerido."
-      ></wc-input-auto>
-      <wc-input-auto
+      ></quimera-input>
+      <quimera-input
         {...args}
         advertido
         valor="Joze Baría"
         texto-validacion="Vamos, puedes hacerlo mejor."
-      ></wc-input-auto>
-      <wc-input-auto
+      ></quimera-input>
+      <quimera-input
         {...args}
         valido
         valor="Jose María"
         texto-validacion="Bien! Nombre correcto"
-      ></wc-input-auto>
+      ></quimera-input>
     </>
   ),
 };
 
 export const Opcional = {
-  render: (args) => <wc-input-auto {...args} opcional></wc-input-auto>,
+  render: (args) => <quimera-input {...args} opcional></quimera-input>,
 };
 
 export const Deshabilitado = {
-  render: (args) => <wc-input-auto {...args} deshabilitado></wc-input-auto>,
+  render: (args) => <quimera-input {...args} deshabilitado></quimera-input>,
 };

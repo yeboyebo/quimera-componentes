@@ -1,6 +1,4 @@
-@import "../../utiles/tema.css";
-
-wc-input-auto {
+quimera-input {
   label {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,4 @@
-@import "../../utiles/tema.css";
-
-wc-boton-auto {
+quimera-boton {
   box-sizing: border-box;
 
   &[destructivo] {
