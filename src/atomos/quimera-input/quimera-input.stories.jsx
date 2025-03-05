@@ -12,6 +12,7 @@ const meta = {
     },
   },
   args: {
+    nombre: "nombre",
     label: "Nombre",
     placeholder: "Introduce tu nombre",
     "texto-validacion": "Mínimo 8 caracteres",

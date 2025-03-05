@@ -3,6 +3,7 @@ customElements.get("quimera-input") ||
     "quimera-input",
     class extends HTMLElement {
       static observedAttributes = [
+        "nombre",
         "label",
         "placeholder",
         "valor",
@@ -22,6 +23,7 @@ customElements.get("quimera-input") ||
 
       render() {
         const {
+          nombre,
           label,
           placeholder,
           valor,
@@ -150,6 +152,7 @@ customElements.get("quimera-input") ||
                 <span class="etiqueta-opcional">(opcional)</span>
             </span>
             <input type="text"
+              name="${nombre}"
               placeholder="${placeholder ?? ""}"
               value="${valor ?? ""}"
               ${deshabilitado !== undefined ? "disabled" : ""} />
