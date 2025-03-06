@@ -137,8 +137,8 @@ customElements.get("quimera-input") ||
 
               input {
                 background-color: var(--color-deshabilitado);
-                color: var(--color-negro);
-                border-color: var(--color-negro);
+                color: var(--negro);
+                border-color: var(--negro);
               }
 
               cursor: inherit;

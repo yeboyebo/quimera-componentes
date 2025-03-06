@@ -58,7 +58,7 @@ customElements.get("quimera-boton") ||
               font-family: var(--font-system-ui);
 
               background-color: var(--color-primario);
-              color: var(--color-blanco);
+              color: var(--blanco);
 
               border: 0;
               border-radius: var(--redondeo-borde-xs);
