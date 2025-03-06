@@ -18,6 +18,9 @@ const meta = {
     "texto-validacion": "Mínimo 8 caracteres",
   },
   argTypes: {
+    nombre: {
+      control: "text",
+    },
     label: {
       control: "text",
     },
