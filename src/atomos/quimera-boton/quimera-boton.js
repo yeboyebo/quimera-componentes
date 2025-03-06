@@ -2,11 +2,17 @@ customElements.get("quimera-boton") ||
   customElements.define(
     "quimera-boton",
     class extends HTMLElement {
+      static observedAttributes = ["tipo"];
+
       connectedCallback() {
         this.render();
       }
 
       render() {
+        const { tipo } = Object.fromEntries(
+          [...this.attributes].map((a) => [a.name, a.value])
+        );
+
         this.innerHTML = `
         <style>
           quimera-boton {
@@ -77,7 +83,9 @@ customElements.get("quimera-boton") ||
             }
           }
         </style>
-        <button>${this.innerHTML}</button>`;
+        <button ${tipo !== undefined ? `type="${tipo}"` : ""}>${
+          this.innerHTML
+        }</button>`;
       }
     }
   );

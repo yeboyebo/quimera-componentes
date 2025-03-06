@@ -12,6 +12,9 @@ const meta = {
     },
   },
   argTypes: {
+    tipo: {
+      control: "text",
+    },
     variante: {
       options: ["solido", "borde", "texto"],
       control: "radio",
