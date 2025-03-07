@@ -5,7 +5,6 @@ const template = ({
   valor,
   deshabilitado,
   "texto-validacion": textoValidacion,
-  contenido,
 }) => `
 <style>
   quimera-input {

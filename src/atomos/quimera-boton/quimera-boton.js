@@ -68,7 +68,7 @@ const template = ({ tipo, contenido }) => `
     }
   }
 </style>
-<button ${tipo !== undefined ? `type="${tipo}"` : ""}>
+<button type="${tipo || "button"}">
   ${contenido}
 </button>
 `;
