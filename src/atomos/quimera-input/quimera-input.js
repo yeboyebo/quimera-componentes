@@ -116,6 +116,24 @@ const template = ({
       cursor: inherit;
       pointer-events: none;
     }
+
+    &[condensado] {
+      .etiqueta {
+        font-size: var(--tamaño-letra-s);
+        
+        .etiqueta-opcional {
+          font-size: var(--tamaño-letra-xxs);
+        }
+      }
+      
+      input {
+        padding: var(--espaciado-xs);
+      }
+      
+      .texto-validacion {
+        font-size: var(--tamaño-letra-xs);
+      }
+    }
   }
 </style>
 <label>

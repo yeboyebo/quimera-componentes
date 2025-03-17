@@ -64,6 +64,10 @@ const meta = {
       control: "boolean",
       table: { defaultValue: { summary: "false" } },
     },
+    condensado: {
+      control: "boolean",
+      table: { defaultValue: { summary: "false" } },
+    },
     "texto-validacion": {
       control: "text",
     },
@@ -121,6 +125,17 @@ export const Deshabilitado = (args) => {
 
   const html = `
 <quimera-select ${attrs} deshabilitado texto-validacion="Se recomienda un país europeo">
+  ${opciones()}
+</quimera-select>`;
+
+  return render(html);
+};
+
+export const Condensado = (args) => {
+  const attrs = argsToAttrs(args);
+
+  const html = `
+<quimera-select ${attrs} condensado texto-validacion="Se recomienda un país europeo">
   ${opciones()}
 </quimera-select>`;
 

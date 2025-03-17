@@ -46,6 +46,10 @@ const meta = {
       control: "boolean",
       table: { defaultValue: { summary: "false" } },
     },
+    condensado: {
+      control: "boolean",
+      table: { defaultValue: { summary: "false" } },
+    },
     "texto-validacion": {
       control: "text",
     },
@@ -110,6 +114,18 @@ export const Deshabilitado = (args) => {
 <quimera-input
   ${attrs}
   deshabilitado texto-validacion="Mínimo 8 caracteres">
+</quimera-input>`;
+
+  return render(html);
+};
+
+export const Condensado = (args) => {
+  const attrs = argsToAttrs(args);
+
+  const html = `
+<quimera-input
+  ${attrs}
+  condensado texto-validacion="Mínimo 8 caracteres">
 </quimera-input>`;
 
   return render(html);
